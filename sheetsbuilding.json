@@ -1,0 +1,5 @@
+[
+  { "structure": "Wall", "material": "Wood/Metal", "hp": 150, "build_time": 0.05 },
+  { "structure": "Ramp", "material": "Wood/Metal", "hp": 200, "build_time": 0.05 },
+  { "structure": "Edit Mode", "action": "Grid Editing", "latency": "Instant", "reset": "Auto" }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "system": "Spike Plant & Defuse",
+    "duration": 45,
+    "defuse_time": 7,
+    "win_condition": "Detonation, Elimination, or Site Control via Building"
+  },
+  {
+    "system": "Economy & Materials",
+    "start_credits": 800,
+    "max_materials": 500,
+    "round_win_bonus": 3000
+  }
+]

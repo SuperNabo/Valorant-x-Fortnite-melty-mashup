@@ -1,0 +1,37 @@
+{
+  "slug": "tactical-spike-build",
+  "title": "Tactical Spike Build",
+  "tagline": "VALORANT tactical gunplay and spike mechanics enhanced with Fortnite building and editing.",
+  "description": "Tactical Spike Build combines precise VALORANT tactical shooter rounds, weapon economy, and spike plant mechanics with Fortnite's iconic real-time building and editing freedom.",
+  "primary": "fortnite",
+  "companions": [
+    "valorant"
+  ],
+  "license": "MIT",
+  "remixAllowed": true,
+  "multiplayer": {
+    "maxPlayers": 10,
+    "connect": {
+      "address": {
+        "log": "{localappdata}/TacticalSpikeBuild/logs/latest.log",
+        "after": "Hosting at "
+      },
+      "hostArgs": [
+        "--host",
+        "--port",
+        "{port}"
+      ],
+      "joinArgs": [
+        "--join",
+        "{address}"
+      ]
+    }
+  },
+  "test": {
+    "checks": [
+      "building_grid_verified",
+      "spike_plant_verified",
+      "round_timer_active"
+    ]
+  }
+}
