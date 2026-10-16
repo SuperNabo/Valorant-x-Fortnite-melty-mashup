@@ -1,34 +1,71 @@
 {
+  "schemaVersion": 1,
   "slug": "fortnant",
   "title": "Fortnant",
   "tagline": "VALORANT agents and tactical abilities meets Fortnite building and map design.",
-  "description": "Fortnant combines VALORANT agent abilities, tactical spike-plant rounds, and weapon economies with Fortnite's iconic real-time building mechanics.",
-  "primary": "fortnite",
-  "companions": [
-    "valorant"
+  "description": "Fortnant combines VALORANT agent abilities, tactical spike-plant rounds, and weapon economies with Fortnite's iconic real-time building mechanics in a high-stakes Deathmatch mode with multiplayer and bots.",
+  "mode": "installed",
+  "games": [
+    {
+      "slug": "fortnite",
+      "role": "primary"
+    },
+    {
+      "slug": "valorant",
+      "role": "companion"
+    }
   ],
   "license": "MIT",
   "remixAllowed": true,
+  "launch": {
+    "kind": "game"
+  },
   "components": [
     {
+      "id": "readme",
+      "label": "README",
       "fileName": "README.md",
-      "destination": "{mod}/README.md"
+      "kind": "main"
     },
     {
+      "id": "weapons",
+      "label": "sheetsweapons",
       "fileName": "sheetsweapons.json",
-      "destination": "{mod}/sheetsweapons.json"
+      "kind": "main"
     },
     {
-      "fileName": "sheetsagents.json",
-      "destination": "{mod}/sheetsagents.json"
-    },
-    {
-      "fileName": "sheetsrules.json",
-      "destination": "{mod}/sheetsrules.json"
-    },
-    {
+      "id": "building",
+      "label": "sheetsbuilding",
       "fileName": "sheetsbuilding.json",
-      "destination": "{mod}/sheetsbuilding.json"
+      "kind": "main"
+    },
+    {
+      "id": "rules",
+      "label": "sheetsrules",
+      "fileName": "sheetsrules.json",
+      "kind": "main"
+    }
+  ],
+  "mappings": [
+    {
+      "component": "readme",
+      "from": "",
+      "to": "{managed}/Fortnant/README.md"
+    },
+    {
+      "component": "weapons",
+      "from": "",
+      "to": "{managed}/Fortnant/sheetsweapons.json"
+    },
+    {
+      "component": "building",
+      "from": "",
+      "to": "{managed}/Fortnant/sheetsbuilding.json"
+    },
+    {
+      "component": "rules",
+      "from": "",
+      "to": "{managed}/Fortnant/sheetsrules.json"
     }
   ],
   "multiplayer": {
@@ -41,7 +78,11 @@
       "hostArgs": [
         "--host",
         "--port",
-        "{port}"
+        "{port}",
+        "--mode",
+        "deathmatch",
+        "--bots",
+        "true"
       ],
       "joinArgs": [
         "--join",
@@ -53,7 +94,7 @@
     "checks": [
       "agent_abilities_verified",
       "building_grid_active",
-      "spike_round_active"
+      "deathmatch_bots_active"
     ]
   }
 }
