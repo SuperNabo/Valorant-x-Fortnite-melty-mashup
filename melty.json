@@ -15,20 +15,20 @@
       "destination": "{mod}/README.md"
     },
     {
-      "fileName": "sheets/weapons.json",
-      "destination": "{mod}/sheets/weapons.json"
+      "fileName": "sheetsweapons.json",
+      "destination": "{mod}/sheetsweapons.json"
     },
     {
-      "fileName": "sheets/agents.json",
-      "destination": "{mod}/sheets/agents.json"
+      "fileName": "sheetsagents.json",
+      "destination": "{mod}/sheetsagents.json"
     },
     {
-      "fileName": "sheets/rules.json",
-      "destination": "{mod}/sheets/rules.json"
+      "fileName": "sheetsrules.json",
+      "destination": "{mod}/sheetsrules.json"
     },
     {
-      "fileName": "sheets/building.json",
-      "destination": "{mod}/sheets/building.json"
+      "fileName": "sheetsbuilding.json",
+      "destination": "{mod}/sheetsbuilding.json"
     }
   ],
   "multiplayer": {
