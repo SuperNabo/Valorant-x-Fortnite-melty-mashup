@@ -10,10 +10,26 @@
   "license": "MIT",
   "remixAllowed": true,
   "components": [
-    "README.md",
-    "sheets/weapons.json",
-    "sheets/agents.json",
-    "sheets/rules.json"
+    {
+      "fileName": "README.md",
+      "destination": "{mod}/README.md"
+    },
+    {
+      "fileName": "sheets/weapons.json",
+      "destination": "{mod}/sheets/weapons.json"
+    },
+    {
+      "fileName": "sheets/agents.json",
+      "destination": "{mod}/sheets/agents.json"
+    },
+    {
+      "fileName": "sheets/rules.json",
+      "destination": "{mod}/sheets/rules.json"
+    },
+    {
+      "fileName": "sheets/building.json",
+      "destination": "{mod}/sheets/building.json"
+    }
   ],
   "multiplayer": {
     "maxPlayers": 10,
