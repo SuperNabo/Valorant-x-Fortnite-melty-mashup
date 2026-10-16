@@ -1,19 +1,33 @@
 {
-  "slug": "tactical-spike-build",
-  "title": "Tactical Spike Build",
-  "tagline": "VALORANT tactical gunplay and spike mechanics enhanced with Fortnite building and editing.",
-  "description": "Tactical Spike Build combines precise VALORANT tactical shooter rounds, weapon economy, and spike plant mechanics with Fortnite's iconic real-time building and editing freedom.",
+  "slug": "fortnant",
+  "title": "Fortnant",
+  "tagline": "VALORANT agents and tactical abilities meets Fortnite building and map design.",
+  "description": "Fortnant combines VALORANT agent abilities, tactical spike-plant rounds, and weapon economies with Fortnite's iconic real-time building mechanics.",
   "primary": "fortnite",
   "companions": [
     "valorant"
   ],
   "license": "MIT",
   "remixAllowed": true,
+  "components": [
+    {
+      "fileName": "README.md",
+      "destination": "{mod}/README.md"
+    },
+    {
+      "fileName": "sheets/weapons.json",
+      "destination": "{mod}/sheets/weapons.json"
+    },
+    {
+      "fileName": "sheets/agents.json",
+      "destination": "{mod}/sheets/agents.json"
+    }
+  ],
   "multiplayer": {
     "maxPlayers": 10,
     "connect": {
       "address": {
-        "log": "{localappdata}/TacticalSpikeBuild/logs/latest.log",
+        "log": "{localappdata}/Fortnant/logs/latest.log",
         "after": "Hosting at "
       },
       "hostArgs": [
@@ -29,9 +43,9 @@
   },
   "test": {
     "checks": [
-      "building_grid_verified",
-      "spike_plant_verified",
-      "round_timer_active"
+      "agent_abilities_verified",
+      "building_grid_active",
+      "spike_round_active"
     ]
   }
 }
