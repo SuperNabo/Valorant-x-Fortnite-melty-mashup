@@ -1,0 +1,5 @@
+[
+  { "agent": "Jett", "role": "Duelist", "ability": "Tailwind (Dash)" },
+  { "agent": "Sova", "role": "Initiator", "ability": "Recon Bolt" },
+  { "agent": "Omen", "role": "Controller", "ability": "Dark Cover (Smoke)" }
+]
